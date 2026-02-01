@@ -7,7 +7,7 @@ const tools = [
         title: "JSON Formatter",
         description: "Prettify, minify, and validate JSON data with syntax highlighting.",
         icon: AlignLeft,
-        href: "/text-formatter", // Reusing this for demo as per request
+        href: "/json-formatter",
     },
     {
         title: "Base64 Encoder",
