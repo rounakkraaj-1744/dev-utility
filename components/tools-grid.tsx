@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { AlignLeft, Key, Link2, Regex, ShieldCheck, ArrowLeftRight, Code2, MoreHorizontal } from "lucide-react"
+import { AlignLeft, Key, Link2, Regex, ShieldCheck, ArrowLeftRight, Database, LayoutGrid } from "lucide-react"
 import Link from "next/link"
 
 const tools = [
@@ -10,10 +10,10 @@ const tools = [
         href: "/json-formatter",
     },
     {
-        title: "Base64 Encoder",
-        description: "Encode or decode strings and files to/from Base64 format securely.",
-        icon: Key,
-        href: "#",
+        title: "SQL Formatter", // Updated to SQL as per design request
+        description: "Beautify and format complex SQL queries for better readability.",
+        icon: Database,
+        href: "/sql-formatter",
     },
     {
         title: "URL Shortener",
@@ -22,10 +22,10 @@ const tools = [
         href: "/url-shortener",
     },
     {
-        title: "Regex Tester",
-        description: "Live testing and explanation for regular expressions in JS, Python, and PHP.",
-        icon: Regex,
-        href: "#",
+        title: "Everyday Tools", // Linking to the new dashboard
+        description: "Essential high-performance utilities for your daily workflow.",
+        icon: LayoutGrid,
+        href: "/everyday-tools",
     },
     {
         title: "JWT Debugger",
@@ -37,18 +37,18 @@ const tools = [
         title: "Case Converter",
         description: "Convert between camelCase, snake_case, PascalCase, and kebab-case.",
         icon: ArrowLeftRight,
-        href: "#",
-    },
-    {
-        title: "HTML Entity Encoder",
-        description: "Easily escape special characters for HTML or XML documents.",
-        icon: Code2,
-        href: "#",
+        href: "/text-formatter", // Linking text formatter here for now
     },
     {
         title: "Password Generator",
         description: "Generate secure, random passwords with custom requirements.",
-        icon: MoreHorizontal,
+        icon: Key,
+        href: "/password-generator",
+    },
+    {
+        title: "Regex Tester",
+        description: "Live testing and explanation for regular expressions in JS, Python, and PHP.",
+        icon: Regex,
         href: "#",
     },
 ]
